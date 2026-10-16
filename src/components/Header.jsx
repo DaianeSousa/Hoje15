@@ -1,5 +1,19 @@
-export function Header() {
+import style from './Header.module.css';
+
+export function Header({ brand, description, children}) {
     return(
-        <h1>Funcionamento</h1>
-    )
+       <header className={style.header}>
+        <div>
+            <span className={style.logo}>GT</span>
+        </div>
+        <div>
+            <strong>{brand}</strong>
+            <span>{description}</span>
+        </div>
+        <nav className={style.navigation}>
+            {children}
+        </nav>
+
+       </header>
+    );
 }

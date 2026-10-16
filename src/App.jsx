@@ -1,15 +1,22 @@
 
-import './App.css'
-import Greetings from './components/Greetings'
+
+
 import { Header } from './components/Header'
+import './App.css'
+
 
 function App() {
   
 
   return (
     <>
-    <Header/>
-    <Greetings/>
+    <Header>
+    <a href="#equipe">Equipe</a>
+    <a href="#aprendizado">aprendizado</a>
+
+
+    </Header>
+
    
 
      </>  
